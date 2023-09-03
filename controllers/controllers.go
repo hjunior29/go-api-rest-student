@@ -11,7 +11,7 @@ import (
 func Hello(c *gin.Context) {
 	name := c.Params.ByName("name")
 	c.JSON(200, gin.H{
-		"API says:": "E ai, " + name + "! Tudo bem?",
+		"API says:": "what's up, " + name + "! are u okay?",
 	})
 }
 
