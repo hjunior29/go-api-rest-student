@@ -1,0 +1,152 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "api-rest-student",
+    "dateExported": "2023-09-03T14:32:26.746Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fee36d5b-1ed0-427f-a645-a0377126772e",
+            "colId": "ea2e9ba8-c3e7-4d8e-8b5b-a92228bf16e2",
+            "containerId": "",
+            "name": "All Student",
+            "url": "/students",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-09-03T14:09:14.436Z",
+            "modified": "2023-09-03T14:12:23.955Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9f5a9300-2951-44ce-b288-185654b3ef9c",
+            "colId": "ea2e9ba8-c3e7-4d8e-8b5b-a92228bf16e2",
+            "containerId": "",
+            "name": "Return Student",
+            "url": "/{name}",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2023-09-03T14:06:48.439Z",
+            "modified": "2023-09-03T14:08:47.495Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "Helder",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "3a67c37e-76c4-45f9-b317-af4bb9672348",
+            "colId": "ea2e9ba8-c3e7-4d8e-8b5b-a92228bf16e2",
+            "containerId": "",
+            "name": "Create Student",
+            "url": "/students",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-09-03T14:12:38.132Z",
+            "modified": "2023-09-03T14:19:48.339Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Helder Junior Silva Lima\",\n  \"cpf\": \"15935712346\",\n  \"rg\": \"8965741\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "abb8c517-6eb0-483e-89fe-eac23a098ca9",
+            "colId": "ea2e9ba8-c3e7-4d8e-8b5b-a92228bf16e2",
+            "containerId": "",
+            "name": "Search Student",
+            "url": "/students/{id}",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-09-03T14:15:20.869Z",
+            "modified": "2023-09-03T14:18:27.762Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "0c87894c-78ea-4daa-9ed9-fdbb8d8c52c3",
+            "colId": "ea2e9ba8-c3e7-4d8e-8b5b-a92228bf16e2",
+            "containerId": "",
+            "name": "Delete Student",
+            "url": "/students/{id}",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-09-03T14:18:37.765Z",
+            "modified": "2023-09-03T14:25:13.423Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "807bc192-a292-41bc-8b8d-c498fa665447",
+            "colId": "ea2e9ba8-c3e7-4d8e-8b5b-a92228bf16e2",
+            "containerId": "",
+            "name": "Edit Student",
+            "url": "/students/{id}",
+            "method": "PATCH",
+            "sortNum": 60000,
+            "created": "2023-09-03T14:19:18.108Z",
+            "modified": "2023-09-03T14:23:24.659Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Helder Junior Silva\",\n  \"cpf\": \"15935712346\",\n  \"rg\": \"89657-41\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "18d19b13-ac63-4c3c-aa76-8a70ddcd0d34",
+            "colId": "ea2e9ba8-c3e7-4d8e-8b5b-a92228bf16e2",
+            "containerId": "",
+            "name": "Search CPF Student ",
+            "url": "/students/cpf/{cpf}",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-09-03T14:20:29.286Z",
+            "modified": "2023-09-03T14:24:48.234Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "cpf",
+                    "value": "15935712346",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:8080"
+        }
+    }
+}
