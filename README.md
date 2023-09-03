@@ -4,7 +4,7 @@ Before starting the project, ensure that the required ports are available. Use t
 
 ```bash
 sudo lsof -i :5432  # Check if the default PostgreSQL database port is in use
-sudo lsof -i :54321    # Check if the port for the pgadmin web is in use
+sudo lsof -i :54321 # Check if the port for the pgadmin web is in use
 sudo lsof -i :8080  # Check if the port for the our Golang app is in use
 ```
 
