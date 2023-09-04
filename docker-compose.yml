@@ -21,7 +21,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
     ports:
-      - "54321:80"
+      - "54321:54321"
     depends_on:
       - db
     networks:
